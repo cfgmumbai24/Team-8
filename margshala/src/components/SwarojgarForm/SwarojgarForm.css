@@ -1,0 +1,118 @@
+/* SwarozgarForm.css */
+
+.swarozgar-form * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .swarozgar-form {
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #666;
+  }
+  
+  .swarozgar-form h1 {
+    margin: 0 0 20px;
+    font-weight: 400;
+    color: #1c87c9;
+  }
+  
+  .swarozgar-form p {
+    margin: 0 0 5px;
+  }
+  
+  .swarozgar-form .main-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1c87c9;
+  }
+  
+  .swarozgar-form form {
+    padding: 25px;
+    margin: 25px;
+    box-shadow: 0 2px 5px #f5f5f5;
+    background: #f5f5f5;
+  }
+  
+  .swarozgar-form .fas {
+    margin: 25px 10px 0;
+    font-size: 72px;
+    color: #fff;
+  }
+  
+  .swarozgar-form .fa-envelope {
+    transform: rotate(-20deg);
+  }
+  
+  .swarozgar-form .fa-at, .swarozgar-form .fa-mail-bulk {
+    transform: rotate(10deg);
+  }
+  
+  .swarozgar-form input,
+  .swarozgar-form textarea,
+  .swarozgar-form select {
+    width: calc(100% - 18px);
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #1c87c9;
+    outline: none;
+    border-radius: 4px;
+  }
+  
+  .swarozgar-form input::placeholder,
+  .swarozgar-form select::placeholder {
+    color: #666;
+  }
+  
+  .swarozgar-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #1c87c9;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .swarozgar-form button:hover {
+    background: #2371a0;
+  }
+  
+  @media (min-width: 568px) {
+    .swarozgar-form .main-block {
+      flex-direction: row;
+    }
+    .swarozgar-form .left-part, .swarozgar-form form {
+      width: 50%;
+    }
+    .swarozgar-form .fa-envelope {
+      margin-top: 0;
+      margin-left: 20%;
+    }
+    .swarozgar-form .fa-at {
+      margin-top: -10%;
+      margin-left: 65%;
+    }
+    .swarozgar-form .fa-mail-bulk {
+      margin-top: 2%;
+      margin-left: 28%;
+    }
+  }
+  
+  .swarozgar-form .checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .swarozgar-form .checkbox-group label {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  

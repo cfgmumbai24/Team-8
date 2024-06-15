@@ -19,14 +19,14 @@
 // export default Card;
 
 // Card.jsx
-import React from 'react';
-import './Cards.css'; // Import CSS for styling the card component
+import React from "react";
+import "./Cards.css"; // Import CSS for styling the card component
 
 const Card = ({ frontContent, backContent, onClick }) => {
   return (
     <div className="flip-card" onClick={onClick}>
-      <div className="flip-card-inner">
-        <div className="flip-card-front">
+      <div className="flip-card-inner" onClick={onClick}>
+        <div className="flip-card-front" onClick={onClick}>
           <p>{frontContent}</p>
         </div>
         <div className="flip-card-back">

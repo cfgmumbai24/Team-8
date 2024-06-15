@@ -6,6 +6,8 @@ import Mentor from "../Mentor/Mentor.jsx";
 import Signup from "../Signup/Signup.jsx";
 import Signin from "../Signin/SignIn.jsx";
 import Kmainpg from "../KMainPg/KMainPg.jsx";
+import SwarozgarForm from "../SwarojgarForm/SwarojgarForm.jsx";
+import Interest from "../Interest/Interest.jsx";
 
 function PageRoutes({ isAuthenticated, onSignin, onSignout }) {
   return (
@@ -17,6 +19,8 @@ function PageRoutes({ isAuthenticated, onSignin, onSignout }) {
         <Route path="/signup" element={<Signup />} />
         <Route path="/signin" element={<Signin onSignin={onSignin} />} />
         <Route path="/kmainpg" element={isAuthenticated ? <Kmainpg /> : <Navigate to="/signin" />} />
+        <Route path="/swarozgar" element={<SwarozgarForm />} />
+        <Route path="/interest" element={<Interest />} />
       </Routes>
     </Router>
   );
