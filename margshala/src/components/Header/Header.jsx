@@ -1,12 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <a className="navbar-brand" href="#">
+      <Link className="navbar-brand" to="/">
         <img src="https://margshala.com/wp-content/uploads/2023/08/Margshala-Logo.png" width="150" height="60" alt="Margshala Logo" />
-      </a>
+      </Link>
       <button
         className="navbar-toggler"
         type="button"
@@ -21,20 +22,21 @@ const Header = () => {
       <div className="collapse navbar-collapse" id="navbarNavDropdown">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item active">
-            <a className="nav-link" href="#">Home</a>
+            <Link className="nav-link" to="/">Home</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Programs</a>
+            <Link className="nav-link" to="/programs">Programs</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Be A Mentor</a>
+            <Link className="nav-link" to="/be-a-mentor">Be A Mentor</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Contact Us</a>
+            <a className="nav-link" href="/contact" target="_blank" rel="noopener noreferrer">Contact Us</a>
           </li>
         </ul>
       </div>
     </nav>
+    
   );
 };
 

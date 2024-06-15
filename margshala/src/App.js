@@ -3,11 +3,15 @@ import './App.css';
 import Header from './components/Header/Header.jsx';
 import Video from './components/Video/Video.jsx';
 import Card from './components/Cards/Cards.jsx';
+import Footer from './components/Footer/Footer.jsx';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import PageRoutes from './components/ReactRoutes/PageRoutes.jsx';
+import ContactUs from './components/ContactUs/Contact.jsx';
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <PageRoutes />
       <br/>
       <Video />
       <br/><br/>
@@ -27,6 +31,8 @@ function App() {
           backContent="We help you build your business"
         />
       </div>
+      <br/><br/><br/>
+      <Footer/>
     </div>
   );
 }
