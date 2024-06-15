@@ -1,12 +1,13 @@
-// src/Signin.js
 import React, { useState } from 'react';
-import { auth } from 'C:/Users/Sanskruti/Desktop/Team-8/app/src/firebase.js'; // Ensure you import the auth instance
+import { auth } from '../firebase.js'; // Ensure you import the auth instance
 import { signInWithEmailAndPassword } from 'firebase/auth';
+import { useNavigate } from 'react-router-dom';
 
-function Signin() {
+function Signin({ onSignin }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
+  const navigate = useNavigate();
 
   const handleSignin = () => {
     signInWithEmailAndPassword(auth, email, password)
@@ -14,6 +15,8 @@ function Signin() {
         const user = userCredential.user;
         console.log('Signed in:', user);
         setError(null);
+        onSignin(); // Notify parent component of successful sign-in
+        navigate('/kuserform'); // Navigate to KUserForm
       })
       .catch((error) => {
         setError(error.message);
@@ -21,22 +24,31 @@ function Signin() {
   };
 
   return (
-    <div>
-      <h2>Sign In</h2>
-      <input
-        type="email"
-        placeholder="Email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <input
-        type="password"
-        placeholder="Password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <button onClick={handleSignin}>Sign In</button>
-      {error && <p style={{ color: 'red' }}>{error}</p>}
+    <div className="auth-wrapper">
+      <div className="auth-inner">
+        <h2>Sign In</h2>
+        <div className="mb-3">
+          <input
+            type="email"
+            className="form-control"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </div>
+        <div className="mb-3">
+          <input
+            type="password"
+            className="form-control"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+        </div>
+        <button className="btn btn-primary mb-3" onClick={handleSignin}>Sign In</button>
+        {error && <p style={{ color: 'red' }}>{error}</p>}
+        <p>Don't have an account? <a href="/signup">Sign Up</a></p>
+      </div>
     </div>
   );
 }

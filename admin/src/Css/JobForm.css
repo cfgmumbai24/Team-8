@@ -1,0 +1,71 @@
+/* JobForm.css */
+
+/* Container for form */
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Form itself */
+.auth-inner-prop {
+  width: 80%; /* Adjust the width as needed */
+  max-width: 600px; /* Maximum width of the form */
+  padding: 20px;
+  background: #f8f9fa; /* Light background color */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Form title */
+.auth-inner-prop h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form inputs */
+.auth-inner-prop input[type="text"],
+.auth-inner-prop textarea,
+.auth-inner-prop select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Form button */
+.auth-inner-prop button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff; /* Primary button color */
+  color: white;
+  cursor: pointer;
+}
+
+/* Error and success messages */
+.alert {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.alert-danger {
+  background-color: #dc3545; /* Red background for error */
+  color: white;
+}
+
+.alert-success {
+  background-color: #28a745; /* Green background for success */
+  color: white;
+}
+
+/* Additional styling for tags */
+.auth-inner-prop .badge {
+  padding: 6px 12px;
+  margin-bottom: 6px;
+}

@@ -1,2 +1,2 @@
 npm install firebase
-npm insta
+npm install react-select

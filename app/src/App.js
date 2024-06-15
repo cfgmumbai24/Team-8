@@ -1,18 +1,40 @@
-// src/App.js
-import React from 'react';
-import './App.css';
-import Signup from './Component/Signup';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Signin from './Component/SignIn';
-import JobForm from './Component/JobForm'; // Ensure the correct path to your JobForm component
+import Signup from './Component/Signup';
+import KMainPg from './Component/KMainPg';
 
 function App() {
+  const [authenticated, setAuthenticated] = useState(false);
+
+  const handleSignin = () => {
+    setAuthenticated(true);
+  };
+
+  const handleSignout = () => {
+    setAuthenticated(false);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Welcome to the Job Submission Form</h1>
-      </header>
-      <JobForm />
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          {!authenticated && (
+            <>
+              <Route path="/signin" element={<Signin onSignin={handleSignin} />} />
+              <Route path="/signup" element={<Signup />} />
+              <Route path="/*" element={<Navigate to="/signin" />} />
+            </>
+          )}
+          {authenticated && (
+            <>
+              <Route path="/kmainpg" element={<KMainPg />} />
+              <Route path="/*" element={<Navigate to="/kmainpg" />} />
+            </>
+          )}
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
