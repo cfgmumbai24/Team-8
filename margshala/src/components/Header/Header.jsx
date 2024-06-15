@@ -34,7 +34,7 @@ const Header = () => {
             <Link className="nav-link" to="/be-a-mentor">Be A Mentor</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/contact" target="_blank" rel="noopener noreferrer">Contact Us</a>
+            <a className="nav-link" href="/contact" rel="noopener noreferrer">Contact Us</a>
           </li>
         </ul>
       </div>
