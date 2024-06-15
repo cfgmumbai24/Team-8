@@ -1,9 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
-
+import Card from '../Cards/Cards'
+import Footer from '../Footer/Footer'
+import Video from '../Video/Video'
 const Header = () => {
   return (
+    <>
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <Link className="navbar-brand" to="/">
         <img src="https://margshala.com/wp-content/uploads/2023/08/Margshala-Logo.png" width="150" height="60" alt="Margshala Logo" />
@@ -36,7 +39,31 @@ const Header = () => {
         </ul>
       </div>
     </nav>
-    
+
+    <div className='App'>
+    <br/>
+      <Video />
+      <br/><br/>
+      <h2 style={{ textAlign: 'center', margin: '20px 0' }}>Explore Our Programs</h2>
+      <br/>
+      <div className="container-cards d-flex justify-content-center">
+        <Card
+          frontContent="Find Your Interests"
+          backContent="We will help you find your interests"
+        />
+        <Card
+          frontContent="Khojshala"
+          backContent="We help you find possible paths and directions to achieve your interests"
+        />
+        <Card
+          frontContent="Swarozgar Fellowship"
+          backContent="We help you build your business"
+        />
+      </div>
+      <br/><br/><br/>
+      <Footer/>
+    </div>
+    </>
   );
 };
 
