@@ -19,10 +19,9 @@ const Footer = () => {
 
               <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                 <h6 className="text-uppercase mb-4 font-weight-bold">Products</h6>
-                <p><a href="#!" className="text-dark">Find your interest</a></p>
-                <p><a href="#!" className="text-dark">Khojshala</a></p>
-                <p><a href="#!" className="text-dark">Swarojgaar</a></p>
-                <p><a href="#!" className="text-dark"></a>Fellowship</p>
+                <p><a href="./interest" className="text-dark">Find your interest</a></p>
+                <p><a href="./signup" className="text-dark">Khojshala</a></p>
+                <p><a href="./swarojgar" className="text-dark">Swarojgaar</a></p>
               </div>
 
               <hr className="w-100 clearfix d-md-none" />

@@ -9,6 +9,7 @@ import Kmainpg from "../KMainPg/KMainPg.jsx";
 import SwarozgarForm from "../SwarojgarForm/SwarojgarForm.jsx";
 import Interest from "../Interest/Interest.jsx";
 
+
 function PageRoutes({ isAuthenticated, onSignin, onSignout }) {
   return (
     <Router>
@@ -21,6 +22,7 @@ function PageRoutes({ isAuthenticated, onSignin, onSignout }) {
         <Route path="/kmainpg" element={isAuthenticated ? <Kmainpg /> : <Navigate to="/signin" />} />
         <Route path="/swarozgar" element={<SwarozgarForm />} />
         <Route path="/interest" element={<Interest />} />
+  
       </Routes>
     </Router>
   );

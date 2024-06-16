@@ -4,6 +4,7 @@ import './Header.css';
 import Card from '../Cards/Cards';
 import Footer from '../Footer/Footer';
 import Video from '../Video/Video';
+import AboutUs from '../AboutUs/About';
 
 const Header = () => {
   const navigate = useNavigate();
@@ -71,10 +72,12 @@ const Header = () => {
         <Video />
         <br />
         <br />
+        <AboutUs/>
+        <br/><br/>
         <h2 style={{ textAlign: "center", margin: "20px 0" }}>
           Explore Our Programs
         </h2>
-        <br />
+        <br/>
         <div className="container-cards d-flex justify-content-center">
           <Card
             frontContent="Find Your Interests"

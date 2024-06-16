@@ -16,10 +16,12 @@ function Interest() {
           <input type="text" placeholder="Location" id="locationInput" />
           <button onClick={closePopup}>Submit</button>
         </div>
+        
       )}
-      <h1>LOCAL OPPORTUNITIES</h1>
       {!isPopupVisible && (
-        <div className="gallery">
+        <>
+        <h1>LOCAL OPPORTUNITIES</h1>
+        <div className="gallery" >
           <div className="card">
             <a href="https://www.youtube.com/watch?v=Yk5YF1gvSEA" target="_blank" rel="noopener noreferrer">
               <img src="https://images.pexels.com/photos/221016/pexels-photo-221016.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Farming" />
@@ -49,6 +51,7 @@ function Interest() {
             </a>
           </div>
         </div>
+        </>
       )}
     </div>
   );
