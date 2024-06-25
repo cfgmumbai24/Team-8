@@ -68,10 +68,3 @@ We welcome contributions from the community! If you'd like to contribute, please
 
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
-
-Contact
-For questions or feedback, please contact us at:
-
-Email: contact@maargshala.org
-Website: www.maargshala.org
-LinkedIn: Maargshala Foundation
