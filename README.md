@@ -38,33 +38,3 @@ Personalized Assistance: Enhancing reach by asking young entrepreneurs to pitch 
 Networking and Exposure: Posting these videos on LinkedIn-like platforms with relevant hashtags. This approach ensures that local entrepreneurs receive visibility and support from their communities.
 By showcasing success stories in local languages and contexts, we inspire more community members to participate and grow their businesses.
 
-Installation
-To install and set up the project locally, follow these steps:
-
-Clone the repository:
-bash
-Copy code
-git clone https://github.com/your-repo/maargshala.git
-Navigate to the project directory:
-bash
-Copy code
-cd maargshala
-Install the necessary dependencies:
-bash
-Copy code
-npm install
-Usage
-To use the project, follow these steps:
-
-Start the development server:
-bash
-Copy code
-npm start
-Open your browser and navigate to http://localhost:3000.
-For detailed usage instructions and examples, refer to the User Guide.
-
-Contributing
-We welcome contributions from the community! If you'd like to contribute, please read our Contributing Guidelines and Code of Conduct.
-
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
