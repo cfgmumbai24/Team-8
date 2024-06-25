@@ -8,12 +8,8 @@ Table of Contents-
 -Adventurer Section
 -Khojshala
 -Swarozgar
--Installation
--Usage
--Contributing
--License
--Contact
-- gitIntroduction
+
+- Introduction
 Maargshala Foundation aims to increase the reach and impact of our programs by engaging more youth, building networks, and expanding our reach. Our unique structure is designed to cater to the specific needs of rural and remote communities, particularly in the Himalayan region.
 
 Solution Overview
